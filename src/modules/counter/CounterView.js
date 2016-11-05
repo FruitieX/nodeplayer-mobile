@@ -8,6 +8,9 @@ import {
   Text,
   View
 } from 'react-native';
+import {
+  Button
+} from 'react-native-elements'
 
 const CounterView = React.createClass({
   propTypes: {
@@ -61,6 +64,11 @@ const CounterView = React.createClass({
 
     return (
       <View style={styles.container}>
+
+        <Button
+          raised
+          icon={{name: 'cached'}}
+          title='RAISED WITH ICON' />
 
         {this.renderUserInfo()}
 
